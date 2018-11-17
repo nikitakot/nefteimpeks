@@ -1,11 +1,13 @@
 import React from 'react'
-
+import { FormattedMessage } from 'react-intl'
 import logo from '../assets/images/logo.svg';
 
 const Header = (props) => (
     <header id="header" className="alt">
         <span className="logo"><img src={logo} alt="" /></span>
-        <h1>Stellar</h1>
+        <h1>
+          <FormattedMessage id="nefteimpeks" />
+        </h1>
         <p>Just another free, fully responsive site template<br />
         design by <a href="https://html5up.net">HTML5 UP</a>.</p>
     </header>

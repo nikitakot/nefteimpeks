@@ -25,7 +25,7 @@ class Index extends React.Component {
   }
 
   render() {
-    const locale = this.props.pageContext.locale
+    const locale = this.props.pathContext.locale
 
     console.log('LOG: ', this.props)
 
@@ -51,8 +51,8 @@ class Index extends React.Component {
                   <h2>Ipsum sed adipiscing</h2>
                 </header>
                 <p>Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna
-                adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus.
-                Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.</p>
+                  adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus.
+                  Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.</p>
                 <ul className="actions">
                   <li><Link to="/generic" className="button">Learn More</Link></li>
                 </ul>
@@ -93,7 +93,7 @@ class Index extends React.Component {
             <header className="major">
               <h2>Ipsum consequat</h2>
               <p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-              posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
+                posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
             </header>
             <ul className="statistics">
               <li className="style1">
@@ -129,7 +129,7 @@ class Index extends React.Component {
             <header className="major">
               <h2>Congue imperdiet</h2>
               <p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-              posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
+                posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
             </header>
             <footer className="major">
               <ul className="actions">
