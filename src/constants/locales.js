@@ -1,15 +1,15 @@
 module.exports = {
   en: {
     path: 'en',
-    locale: 'English',
+    locale: 'English 🇬🇧',
     default: true
   },
   ru: {
     path: 'ru',
-    locale: 'Russian'
+    locale: 'Русскиий 🇷🇺'
   },
   ua: {
     path: 'ua',
-    locale: 'Ukrainian'
+    locale: 'Українська 🇺🇦'
   }
 }

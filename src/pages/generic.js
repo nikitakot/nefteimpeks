@@ -4,12 +4,14 @@ import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import HeaderGeneric from '../components/HeaderGeneric'
 import pic04 from '../assets/images/pic04.jpg'
+import Language from '../components/Language'
 
 class Generic extends React.Component {
   render() {
-
+    const { locale } = this.props.pageContext
     return (
-      <Layout>
+      <Layout locale={locale}>
+        <Language locale={this.props.pageContext.locale} pathname={this.props.location.pathname}/>
         <Helmet title="Generic Page Title" />
         <HeaderGeneric />
         <div id="main">

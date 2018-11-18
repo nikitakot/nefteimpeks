@@ -7,6 +7,7 @@ import Layout from '../components/layout'
 import Header from '../components/Header'
 import Nav from '../components/Nav'
 import pic01 from '../assets/images/pic01.jpg'
+import Language from '../components/Language'
 
 class Index extends React.Component {
   constructor(props) {
@@ -25,12 +26,11 @@ class Index extends React.Component {
   }
 
   render() {
-    const locale = this.props.pageContext.locale
-
-    console.log('LOG: ', this.props)
+    const { locale } = this.props.pageContext
 
     return (
       <Layout locale={locale}>
+        <Language locale={this.props.pageContext.locale} pathname={this.props.location.pathname}/>
         <Helmet title="Gatsby Starter - Stellar" />
 
         <Header />
